@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    margin: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3874ff;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .active {
+    background-color: #3874ff;
+    border: none;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 20px;
+    padding: 12px;
+    background-color: #3874ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.disable {
+    opacity: 0.3;
+}

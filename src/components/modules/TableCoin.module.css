@@ -1,0 +1,39 @@
+.container {
+    min-height: 100vh;
+    margin-top: 40px;
+}
+
+.main {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 20px 0;
+}
+
+.main thead {
+    border-bottom: 2px solid silver;
+    margin-bottom: 20px;
+}
+
+.main .header th {
+    text-align: start;
+    font-size: 1.1rem;
+}
+
+.loadContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+    .main {
+        display: block;
+        overflow-y: scroll;
+    }
+    .main th,
+    .main td {
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,118 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+}
+
+.container .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    width: 800px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    border: 2px solid #22262e;
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+}
+
+.container .name {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 20px;
+}
+
+.container .name img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.container .main .graph {
+    width: 750px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .buttonContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .types {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.container .buttonContainer button {
+    padding: 3px 4px;
+    background: none;
+    border: 1px solid #3874ff;
+    color: #3874ff;
+    border-radius: 6px;
+}
+
+.container .days {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.container .buttonContainer button.active {
+    background-color: #3874ff;
+    border: none;
+    color: #fff;
+}
+
+.container .details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.container .details div {
+    display: flex;
+}
+
+.container .details div p {
+    color: #3874ff;
+    margin-right: 4px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.container .details div span {
+    display: flex;
+    align-items: center;
+}
+
+.container .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container .close svg {
+    font-size: 1.8rem;
+    color: #ff2929;
+}
